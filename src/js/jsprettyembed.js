@@ -61,7 +61,7 @@ function jsPrettyEmbed(elements, options) {
             return v;
         }
 		var r = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/,
-            m  = v.match(regExp);
+            m  = v.match(r);
 		if (m && m[7].length == 11) {
 			return m[7];
 		}
